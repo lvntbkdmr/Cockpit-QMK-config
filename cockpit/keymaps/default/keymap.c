@@ -111,7 +111,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_QWERTY] = LAYOUT_cockpit(
     KC_TAB,      TR_Q,  TR_W,  TR_E,  TR_R,  TR_T,                 TR_Y,  TR_U,  TR_IDOT,  TR_O,    TR_P,     KC_BSPC,
-    KC_LCTRL,    TR_A,  TR_S,  TR_D,  TR_F,  TR_G,                 TR_H,  TR_J,  TR_K,     TR_L,    TR_SCLN,  TR_QUOT,
+    KC_LCTRL,    TR_A,  TR_S,  TR_D,  TR_F,  TR_G,                 TR_H,  TR_J,  TR_K,     TR_L,    KC_SCLN,  TR_QUOT,
     LSFT_CAPS,   TR_Z,  TR_X,  TR_C,  TR_V,  TR_B,                 TR_N,  TR_M,  TR_COMM,  TR_DOT,  TR_SLSH,  RSFT_ENT,
                                                   KC_MPLY,   KC_MUTE,
                  KC_LALT,   LOWER,    FNL_ENT,                           FNR_SPC,   RAISE,   KC_RGUI,    
