@@ -182,8 +182,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //   
 
  [_FNL] = LAYOUT_cockpit(
-   KC_ESC,  KC_LGUI(KC_1),  KC_LGUI(KC_2),  KC_LGUI(KC_3),  KC_LGUI(KC_4),  KC_LGUI(KC_5),               _______,  UK_TRU,  UK_TRI,   UK_TRO,  _______,  KC_DEL,
-   _______,  KC_LGUI(KC_6),  KC_LGUI(KC_7),  KC_LGUI(KC_8),  KC_LGUI(KC_9),  KC_LGUI(KC_0),               _______,  _______,  _______,  _______,      S(KC_SCLN),  S(KC_QUOT),
+   KC_ESC,  LGUI(KC_1),  LGUI(KC_2),  LGUI(KC_3),  LGUI(KC_4),  LGUI(KC_5),               _______,  UK_TRU,  UK_TRI,   UK_TRO,  _______,  KC_DEL,
+   _______,  LGUI(KC_6),  LGUI(KC_7),  LGUI(KC_8),  LGUI(KC_9),  LGUI(KC_0),               _______,  _______,  _______,  _______,      S(KC_SCLN),  S(KC_QUOT),
    _______,  _______,  _______,  _______,  _______,  _______,               _______,  _______,  _______,  S(KC_GRV),   S(KC_SLSH),  KC_ENT,
                                                          KC_MPLY,   KC_MUTE,
                         KC_LALT,   LOWER,    FNL_ENT,                           KC_ENT,   RAISE,   KC_RGUI,    
