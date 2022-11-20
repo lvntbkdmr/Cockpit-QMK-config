@@ -131,3 +131,5 @@
 /* Bootmagic Lite key configuration */
 // #define BOOTMAGIC_LITE_ROW 0
 // #define BOOTMAGIC_LITE_COLUMN 0
+//
+#define UNICODE_SELECTED_MODES UC_WINC, UC_MAC, UC_LNX 
