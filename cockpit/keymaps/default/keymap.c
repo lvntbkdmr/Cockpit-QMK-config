@@ -78,11 +78,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  
 // LOWER 
 // ?-----------------------------------------?                   ?-----------------------------------------?
-// ¦ ESC  ¦      ¦      ¦      ¦      ¦      ¦                   ¦  7   ¦  8   ¦  9   ¦  -   ¦  =   ¦ DEL  ¦
+// ¦ ESC  ¦  F1  ¦  F2  ¦  F3  ¦  F4  ¦  F5  ¦                   ¦  7   ¦  8   ¦  9   ¦  -   ¦  =   ¦ DEL  ¦
 // +------+------+------+------+------+------¦                   +------+------+------+------+------+------¦
-// ¦      ¦      ¦      ¦      ¦      ¦      ¦                   ¦  4   ¦  5   ¦  6   ¦  *   ¦  ~   ¦  `   ¦
+// ¦      ¦  F6  ¦  F7  ¦  F8  ¦  F9  ¦ F10  ¦                   ¦  4   ¦  5   ¦  6   ¦  *   ¦  ~   ¦  `   ¦
 // +------+------+------+------+------+------¦                   +------+------+------+------+------+------¦
-// ¦      ¦      ¦      ¦      ¦      ¦      ¦                   ¦  1   ¦  2   ¦  3   ¦  0   ¦  \   ¦ ENT  ¦
+// ¦      ¦      ¦      ¦      ¦      ¦ F11  ¦                   ¦  1   ¦  2   ¦  3   ¦  0   ¦  \   ¦ ENT  ¦
 // ?-----------------------------------------+-------------------+-----------------------------------------?
 //                                           ¦  MPRV   ¦  MNXT   ¦
 //                     ?---------------------+-------------------+--------------------?
@@ -95,9 +95,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
  [_LOWER] = LAYOUT_cockpit(
-   KC_ESC,   _______,  _______,   _______,  _______,   _______,               KC_7,  KC_8,   KC_9,   KC_MINS,  KC_EQL,  KC_DEL,
-   _______,  _______,  _______,   _______,  _______,   _______,               KC_4,  KC_5,   KC_6,  KC_PAST,   S(KC_GRV),  KC_GRV,
-   _______,  _______,  _______,   _______,  _______,   _______,               KC_1,  KC_2,   KC_3,  KC_0,  KC_BSLS,  KC_ENT,
+   KC_ESC,   KC_F1,    KC_F2,     KC_F3,    KC_F4,     KC_F5,                 KC_7,  KC_8,   KC_9,   KC_MINS,  KC_EQL,  KC_DEL,
+   _______,  KC_F6,    KC_F7,     KC_F8,    KC_F9,     KC_F10,                KC_4,  KC_5,   KC_6,  KC_PAST,   S(KC_GRV),  KC_GRV,
+   _______,  _______,  _______,   _______,  _______,   KC_F11,                KC_1,  KC_2,   KC_3,  KC_0,  KC_BSLS,  KC_ENT,
                                                               KC_MPRV,   KC_MNXT,
                              KC_LALT,   LOWER,    _______,                          KC_ENT,   RAISE,   KC_RGUI,    
                                                                      KC_UP,
@@ -109,9 +109,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // ?-----------------------------------------?                   ?-----------------------------------------?
 // ¦  !   ¦  @   ¦  #   ¦  $   ¦  %   ¦  ^   ¦                   ¦  &   ¦  (   ¦  )   ¦   _  ¦  +   ¦ DEL  ¦
 // +------+------+------+------+------+------¦                   +------+------+------+------+------+------¦
-// ¦      ¦  F1  ¦  F2  ¦  F3  ¦  F4  ¦  F5  ¦                   ¦      ¦  {   ¦  }   ¦      ¦      ¦      ¦
+// ¦      ¦      ¦      ¦      ¦      ¦      ¦                   ¦      ¦  {   ¦  }   ¦      ¦      ¦      ¦
 // +------+------+------+------+------+------¦                   +------+------+------+------+------+------¦
-// ¦      ¦  F6  ¦  F7  ¦  F8  ¦  F9  ¦ F10  ¦                   ¦  F11 ¦  [   ¦  ]   ¦      ¦  |   ¦ ENT  ¦
+// ¦      ¦      ¦      ¦      ¦      ¦      ¦                   ¦      ¦  [   ¦  ]   ¦      ¦  |   ¦ ENT  ¦
 // ?-----------------------------------------+-------------------+-----------------------------------------?
 //                                           ¦  MPLY   ¦  MUTE   ¦
 //                     ?---------------------+-------------------+--------------------?
@@ -125,9 +125,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   
 
  [_RAISE] = LAYOUT_cockpit(
-   S(KC_1),   S(KC_2),  S(KC_3),  S(KC_4),  S(KC_5),  S(KC_6),          S(KC_7),  S(KC_9),   S(KC_0),   S(KC_MINS),   S(KC_EQL),  KC_DEL,
-   _______,  KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,          _______,  S(KC_LBRC),   S(KC_RBRC),   _______,   _______,  _______,
-   _______,  KC_F6,  KC_F7,  KC_F8,  KC_F9,  KC_F10,             KC_F11,  KC_LBRC,  KC_RBRC,  _______,  S(KC_BSLS),  KC_ENT,
+   S(KC_1),   S(KC_2),  S(KC_3),  S(KC_4),  S(KC_5),  S(KC_6),          S(KC_7),  S(KC_9),     S(KC_0),     S(KC_MINS),  S(KC_EQL), KC_DEL,
+   _______,  _______,  _______,   _______,  _______,   _______,         _______,  S(KC_LBRC),  S(KC_RBRC),  _______,   _______,  _______,
+   _______,  _______,  _______,   _______,  _______,   _______,         _______,  KC_LBRC,  KC_RBRC,  _______,  S(KC_BSLS),  KC_ENT,
                                                KC_MPLY,   KC_MUTE,
               KC_LALT,   LOWER,    FNL_ENT,                           FNR_SPC,   RAISE,   KC_RGUI,    
                                                       KC_UP,
@@ -182,8 +182,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //   
 
  [_FNL] = LAYOUT_cockpit(
-   KC_ESC,  LGUI(KC_1),  LGUI(KC_2),  LGUI(KC_3),  LGUI(KC_4),  LGUI(KC_5),               _______,  UK_TRU,  UK_TRI,   UK_TRO,  _______,  KC_DEL,
-   _______,  LGUI(KC_6),  LGUI(KC_7),  LGUI(KC_8),  LGUI(KC_9),  LGUI(KC_0),               _______,  _______,  _______,  _______,      S(KC_SCLN),  S(KC_QUOT),
+   KC_ESC,  C(KC_1),  C(KC_2),  C(KC_3),  C(KC_4),  C(KC_5),               _______,  UK_TRU,  UK_TRI,   UK_TRO,  _______,  KC_DEL,
+   _______,  C(KC_6),  C(KC_7),  C(KC_8),  C(KC_9),  C(KC_0),               _______,  _______,  _______,  _______,      S(KC_SCLN),  S(KC_QUOT),
    _______,  _______,  _______,  _______,  _______,  _______,               _______,  _______,  _______,  S(KC_GRV),   S(KC_SLSH),  KC_ENT,
                                                          KC_MPLY,   KC_MUTE,
                         KC_LALT,   LOWER,    FNL_ENT,                           KC_ENT,   RAISE,   KC_RGUI,    
@@ -242,7 +242,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
  [_ADJUST] = LAYOUT_cockpit(
-   RGB_VAI,   RGB_SAI, RGB_HUI,  RGB_MOD,  XXXXXXX,   RGB_TOG,                  UC_MAC,  UC_LNX,  UC_WIN,  QWERTY,   XXXXXXX,   XXXXXXX,
+   RGB_VAI,   RGB_SAI, RGB_HUI,  RGB_MOD,  XXXXXXX,   RGB_TOG,                  UC_MAC,  UC_LNX,  UC_WINC,  QWERTY,   XXXXXXX,   XXXXXXX,
    RGB_VAD,   RGB_SAD, RGB_HUD,  RGB_RMOD, XXXXXXX,   XXXXXXX,                  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,     XXXXXXX,
    XXXXXXX,   XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,   XXXXXXX,             RESET,    XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,     XXXXXXX,
                                                               KC_MPLY,   KC_MUTE,
