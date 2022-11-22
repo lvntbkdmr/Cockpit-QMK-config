@@ -18,4 +18,3 @@ RGBLIGHT_ENABLE = yes       # Enable keyboard RGB underglow
 AUDIO_ENABLE = no           # Audio output
 ENCODER_ENABLE = yes		# Encoder
 UNICODEMAP_ENABLE = yes
-MOUSE_SHARED_EP = yes
